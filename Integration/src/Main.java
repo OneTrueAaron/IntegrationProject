@@ -21,7 +21,7 @@ public class Main {
 		
 		boolean didComplete = useThatData(greeting, passedInt); // method call. greeting and passedInt are arguments
 		Random randomNum = new Random();
-		int dayOfWeek = randomNum.nextInt(7); // get random number from 0 to 7, with 0 being sunday
+		int dayOfWeek = randomNum.nextInt(7); // get random number from 0 to 6, with 0 being sunday
 		System.out.println(weekProblems(dayOfWeek)); // prints day of the week based on random number
 		
 		mathProblems();
@@ -53,7 +53,7 @@ public class Main {
 	
 	public static String weekProblems(int week) {
 		
-		String weekDay = null;
+		String weekDay = null; // switch accepts random number from 0 to 6 and converts to day
 		switch(week) {
 			case 0: weekDay = "Sunday";
 				break;
